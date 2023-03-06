@@ -235,4 +235,64 @@ h2, p {
   background-image: url(../assets/star.png);
   background-repeat: space;
   background-size: 20px auto;
+}
+.main .contact {
+  padding-top: var(--primary-space);
+  margin-bottom: var(--primary-space);
+}
+.main .contact-title h2 {
+  color: var(--title-color);
+  font-size: var(--titles-font-size);
+  line-height: var(--titles-line-height);
+  text-align: center;
+  margin-bottom: 70px;
+}
+.main .contact-wrapper {
+  max-width: 788px;
+  display: flex;
+  margin: var(--margin-center);
+  gap: 40px;
+}
+.main .contact-form input {
+  width: 334px;
+  height: 56px;
+  margin-bottom: 14px;
+  border: none;
+  padding: 0 20px;
+  background-color: var(--form-background-color);
+  border-radius: 61px;
+}
+.main .contact-form button {
+  width: 168px;
+  height: 56px;
+  border: 3px solid #4DB96B;
+  border-radius: 61px;
+  margin: var(--margin-center);
+  display: block;
+}
+.main .contact-info {
+  padding-top: 34px;
+  padding-left: 40px;
+}
+.main .contact-info > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main .contact-info > ul li {
+  margin-bottom: 33px;
+  color: #333333;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.main .contact-info > ul li a {
+  color: #333333;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.footer {
+  height: 145px;
+  background-color: #324B29;
 }/*# sourceMappingURL=index.css.map */

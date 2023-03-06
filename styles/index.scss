@@ -235,6 +235,73 @@ h2, p {
             } 
         }
     }
+    
+    .contact {
+        padding-top: var(--primary-space);
+        margin-bottom: var(--primary-space);
 
+        &-title {
+            h2 {
+                @include title ();
+                margin-bottom: 70px;
+            }
+        }
+
+        &-wrapper {
+            max-width: 788px;
+            display: flex;
+            margin: var(--margin-center);
+            gap: 40px;
+        }
+
+        &-form {
+            input {
+                width: 334px;
+                height: 56px;
+                margin-bottom: 14px;
+                border: none;
+                padding: 0 20px;
+                background-color: var(--form-background-color);
+                border-radius: 61px;
+            }
+            button {
+                width: 168px;
+                height: 56px;
+                border: 3px solid #4DB96B;
+                border-radius: 61px;
+                margin: var(--margin-center);
+                display: block;
+            }
+        }
+
+        &-info {
+            padding-top: 34px;
+            padding-left: 40px;
+
+            & > ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                
+                li {
+                    margin-bottom: 33px;
+                    color: #333333;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    a {
+                        color: #333333;
+                        text-decoration: none;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
+.footer {
+    height: 145px;
+    background-color: #324B29;
+}
+
 
