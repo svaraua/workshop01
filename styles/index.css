@@ -181,4 +181,58 @@ h2, p {
 }
 .main .about-wrapper a {
   margin: var(--margin-center);
+}
+.main .testymonials {
+  margin-bottom: var(--primary-space);
+}
+.main .testymonials-wrapper {
+  margin: var(--margin-center);
+  max-width: 1195px;
+}
+.main .testymonials-title {
+  margin: 70px auto;
+}
+.main .testymonials-title h2 {
+  color: var(--title-color);
+  font-size: var(--titles-font-size);
+  line-height: var(--titles-line-height);
+  text-align: center;
+}
+.main .testymonials-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--secondary-space);
+}
+.main .testymonials-cards .card {
+  border: 1px solid var(--green-light);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  gap: 14px;
+}
+.main .testymonials-cards .card img {
+  width: 80px;
+  height: 80px;
+}
+.main .testymonials-cards .card-username {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--green-light);
+  margin-bottom: 13px;
+}
+.main .testymonials-cards .card-testymonial {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0D4C14;
+  margin-bottom: 10px;
+}
+.main .testymonials-cards .card-rating {
+  width: 114px;
+  height: 18px;
+  background-image: url(../assets/star.png);
+  background-repeat: space;
+  background-size: 20px auto;
 }/*# sourceMappingURL=index.css.map */

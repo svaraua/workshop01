@@ -175,6 +175,66 @@ h2, p {
         }
     }
 
- 
+    .testymonials {
+        margin-bottom: var(--primary-space);
+
+        &-wrapper {
+            margin: var(--margin-center);
+            max-width: 1195px;
+        }
+
+        &-title {
+            margin: 70px auto;
+
+                h2 {
+                    @include title();
+                }
+        }
+
+        &-cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--secondary-space);
+            
+            .card {
+                border: 1px solid var(--green-light);
+                border-radius: var(--card-border-radius);
+                display: flex;
+                padding: 30px;
+                justify-content: center;
+                gap: 14px;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                &-username {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: var(--green-light);
+                    margin-bottom: 13px;
+                }
+
+                &-testymonial {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #0D4C14;
+                    margin-bottom: 10px;
+                }
+
+                &-rating {
+                    width: 114px;
+                    height: 18px;
+                    background-image: url(../assets/star.png);
+                    background-repeat: space;
+                    background-size: 20px auto;
+                }
+            } 
+        }
+    }
+
 }
 
