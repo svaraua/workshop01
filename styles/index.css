@@ -137,4 +137,48 @@ h2, p {
 }
 .main .services a {
   margin: var(--margin-center) 70px;
+}
+.main .about h2 {
+  color: var(--title-color);
+  font-size: var(--titles-font-size);
+  line-height: var(--titles-line-height);
+  text-align: center;
+  padding-left: 108.63px;
+  margin-top: -30px;
+  margin-bottom: var(--primary-space);
+}
+.main .about h2::after {
+  content: "";
+  display: inline-block;
+  width: 108.63px;
+  height: 93.94px;
+  background-image: url("../assets/vector.png");
+  background-repeat: no-repeat;
+  position: relative;
+  left: -60px;
+  top: 66px;
+  transform: rotate(-3.6deg);
+}
+.main .about-wrapper {
+  background-image: url(../assets/bgbottom.png);
+  background-repeat: no-repeat;
+  padding-top: 154px;
+  padding-bottom: var(--primary-space);
+}
+.main .about-wrapper .text-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 60px;
+  padding-bottom: var(--primary-space);
+}
+.main .about-wrapper .text-wrapper p {
+  width: 360px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .about-wrapper a {
+  margin: var(--margin-center);
 }/*# sourceMappingURL=index.css.map */

@@ -125,6 +125,56 @@ h2, p {
         }
     }
 
-    
+    .about {
+        h2 {
+            @include title();
+            padding-left: 108.63px;
+            margin-top: -30px;
+            margin-bottom: var(--primary-space);
+        
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 108.63px;
+                height: 93.94px;
+                background-image: url("../assets/vector.png");
+                background-repeat: no-repeat;
+                position: relative;
+                left: -60px;
+                top: 66px;
+                transform: rotate(-3.6deg);
+            }
+        }
+        &-wrapper {
+            background-image: url(../assets/bgbottom.png);
+            background-repeat: no-repeat;
+            padding-top: 154px;
+            padding-bottom: var(--primary-space);
+
+            .text-wrapper {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                gap: 60px;
+                padding-bottom: var(--primary-space);
+
+                p {
+                    width: 360px;
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                    
+            }
+
+            a {
+                margin: var(--margin-center);
+            }
+            
+        }
+    }
+
+ 
 }
 
