@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'mixins';
+
+/* General styles */
+body {
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+h2, p {
+    margin: 0;
+}
+
+.link {
+    @include button();
+    color: var(--green-light);
+    box-shadow: 0px 16px 30px rgba(50, 175, 100, 0.15);
+
+    &:hover {
+        background-color: var(--green-light);
+        color: var(--primary-color);
+        transition: all 1s ease;
+    }
+}
+
+.header-wrapper {
+    box-sizing: border-box;
+    background-image: url(../assets/bgtop.png);
+    background-repeat: no-repeat;
+    height: 840px;
+    padding-top: 58px;
+    margin-bottom: 70px;
+    
+    img {
+        display: block;
+        margin: var(--margin-center) 50px;
+    }
+    
+    .slogan {
+        width: 279px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 59px;
+        color: var(--primary-color);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 18px 48px;
+        margin: var(--margin-center) 17px;
+    }
+
+    .main-title {
+        max-width: 983px;
+        color: var(--primary-color);
+        font-weight: 900;
+        font-size: 144px;
+        line-height: 134px;
+        text-align: center;
+        margin: var(--margin-center) 100px;
+    }
+
+    a {
+        color: var(--green-btn);
+        margin: var(--margin-center) 115px;
+        box-shadow: 0px 10px 50px rgba(16, 51, 30, 0.5);
+    }
+    
+}

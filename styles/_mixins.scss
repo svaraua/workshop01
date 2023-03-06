@@ -1,0 +1,20 @@
+@mixin button() {
+    display: block;
+    width: 180px;
+    background-color: var(--primary-color);
+    padding: 21px 0 22px;
+    border-radius: var(--btn-border-radius);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--green-light);
+}
+
+@mixin title() {
+    color: var(--title-color);
+    font-size: var(--titles-font-size);
+    line-height: var(--titles-line-height);
+    text-align: center;
+}
